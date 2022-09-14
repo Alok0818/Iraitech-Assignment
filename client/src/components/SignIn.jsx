@@ -34,7 +34,7 @@ export default function SignIn() {
 
   const loginHandler = () => {
      console.log(data)
-        axios.post("http://localhost:8080/login" , data).then((res)=>{
+        axios.post("https://iraitech.herokuapp.com/login" , data).then((res)=>{
         console.log(res.data)
        alert("login In Successfully")
         sessionStorage.setItem("user",JSON.stringify(res.data))

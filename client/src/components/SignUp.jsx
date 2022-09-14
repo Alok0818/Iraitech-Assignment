@@ -30,7 +30,7 @@ export default function SignUp() {
   const RegisterHandler = () => {
     console.log("data",data)
     
-      axios.post("http://localhost:8080/register" , data).then((res)=>{
+      axios.post("https://iraitech.herokuapp.com/register" , data).then((res)=>{
         console.log(res.data)
         
         toast.success("Registered Successfully !!",{position:"top-center"})

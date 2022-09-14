@@ -36,7 +36,7 @@ export default function UserProfile() {
   const EditHandler = () => {
     console.log(token.token);
     axios
-      .patch(`http://localhost:8080/users/${id}`, data, {
+      .patch(`https://iraitech.herokuapp.com/users/${id}`, data, {
         headers: { Authorization: `Bearer ${token.token}` },
       })
       .then((res) => {
@@ -57,7 +57,7 @@ export default function UserProfile() {
 
   function profileData() {
     axios
-      .get(`http://localhost:8080/users/${id}`)
+      .get(`https://iraitech.herokuapp.com/users/${id}`)
       .then((res) => {
         let data = {
           firstname: res.data.firstname,
