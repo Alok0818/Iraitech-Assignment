@@ -22,7 +22,6 @@ export default function UserProfile() {
     firstname: "",
     lastname: "",
     email: "",
-
     mobile: "",
     image: "",
     address: "",
