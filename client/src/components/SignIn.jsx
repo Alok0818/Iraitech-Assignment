@@ -125,16 +125,29 @@ export default function SignIn() {
             or
           </Typography>
          
-          <Typography
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              
-              marginBottom: "10px",
-            }}
-          >
-            <Link to="/register">Create your account</Link>
-          </Typography>
+          <Box>
+            <Typography
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+
+                marginBottom: "10px",
+              }}
+            >
+              <Link to="/register">
+                <Button
+                  variant="contained"
+                  sx={{
+                    backgroundColor: "#572afb",
+                    color: "white ",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  Create Your Account
+                </Button>
+              </Link>
+            </Typography>
+          </Box>
         </Paper>
       </Box>
       <ToastContainer />

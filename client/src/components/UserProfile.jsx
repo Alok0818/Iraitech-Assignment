@@ -192,17 +192,29 @@ export default function UserProfile() {
             }}
           ></Box>
           <Box>
-          <Button
-            variant="contained"
-            sx={{ backgroundColor: "#572afb", color: "white " }}
-            // onClick={EditHandler}
-          >
-          <Link to="/login">Logout</Link>
-          </Button>
+            <Typography
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+
+                marginBottom: "10px",
+              }}
+            >
+              <Link to="/">
+                <Button
+                  variant="contained"
+                  sx={{
+                    backgroundColor: "#572afb",
+                    color: "white ",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  Logout
+                </Button>
+              </Link>
+            </Typography>
           </Box>
-          
         </Paper>
-        
       </Box>
 
       <ToastContainer />
