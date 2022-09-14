@@ -14,10 +14,6 @@ app.use("/users",userController);
 app.post("/register", register);
 app.post("/login", login);
 
-app.get("/logout",(req,res)=>{
-  req.logout();
-  res.redirect("/");
-});
 
 app.get("",async(req,res)=>{
   try {

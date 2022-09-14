@@ -197,7 +197,7 @@ export default function UserProfile() {
             sx={{ backgroundColor: "#572afb", color: "white " }}
             // onClick={EditHandler}
           >
-          <Link to="/register">Logout</Link>
+          <Link to="/login">Logout</Link>
           </Button>
           </Box>
           
